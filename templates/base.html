@@ -1,0 +1,237 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8"/>
+    <title>PMS | Trust Axiata Digital Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="PMS" name="Md Shafiqul Islam"/>
+    <link href="{% static '' %}css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css"/>
+    <link href="{% static '' %}css/icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{% static '' %}css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-style"/>
+</head>
+
+<body class="loading hide-menu" data-layout="full" data-layout-color="light" data-leftbar-theme="light"
+      data-rightbar-onstart="true">
+
+
+<div class="wrapper">
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="leftside-menu" style="background: white">
+
+        <!-- LOGO -->
+        <a href="{% url 'dashboard' %}" class="logo text-center card shadow-lg bg-body">
+                      <img src="{% static 'images/loadersplash.png' %}" alt="" height="45">
+        </a>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="content-page">
+        <div class="content">
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <ul class="list-unstyled topbar-menu float-end mb-0">
+                    <li class="dropdown notification-list d-lg-none">
+                        <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="false" aria-expanded="false">
+                            <i class="dripicons-search noti-icon"></i>
+                        </a>
+                    </li>
+
+
+<li class="nav-link">
+
+            <div class="form-check form-switch mb-1">
+                <input type="checkbox" class="form-check-input" name="color-scheme-mode" value="light"
+                       id="light-mode-check" checked/>
+                <label class="form-check-label" for="light-mode-check">Light Mode</label>
+            </div>
+
+            <div class="form-check form-switch mb-1">
+                <input type="checkbox" class="form-check-input" name="color-scheme-mode" value="dark"
+                       id="dark-mode-check"/>
+                <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
+            </div>
+
+
+</li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                           role="button" aria-haspopup="false"
+                           aria-expanded="false">
+                                    <span class="account-user-avatar">
+                                        <img src="{% static '' %}images/users/avatar-1.jpg" alt="user-image"
+                                             class="rounded-circle">
+                                    </span>
+                            <span>
+                                        <span class="account-user-name">Dominic Keller</span>
+                                        <span class="account-position">Founder</span>
+                                    </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                            <!-- item-->
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-logout me-1"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end Topbar -->
+
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
+                                    <li class="breadcrumb-item active">Full</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Dashboard</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card widget-flat">
+                                    <div class="card-body">
+                                        <div class="float-end">
+                                            <i class="mdi mdi-account-multiple widget-icon bg-success-lighten text-success"></i>
+                                        </div>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Customers</h5>
+                                        <h3 class="mt-3 mb-3">36,254</h3>
+                                        <p class="mb-0 text-muted">
+                                            <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
+                                            <span class="text-nowrap">Since last month</span>
+                                        </p>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card widget-flat">
+                                    <div class="card-body">
+                                        <div class="float-end">
+                                            <i class="mdi mdi-cart-plus widget-icon bg-danger-lighten text-danger"></i>
+                                        </div>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Orders</h5>
+                                        <h3 class="mt-3 mb-3">5,543</h3>
+                                        <p class="mb-0 text-muted">
+                                            <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
+                                            <span class="text-nowrap">Since last month</span>
+                                        </p>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card widget-flat">
+                                    <div class="card-body">
+                                        <div class="float-end">
+                                            <i class="mdi mdi-currency-usd widget-icon bg-info-lighten text-info"></i>
+                                        </div>
+                                        <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Revenue</h5>
+                                        <h3 class="mt-3 mb-3">$6,254</h3>
+                                        <p class="mb-0 text-muted">
+                                            <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 7.00%</span>
+                                            <span class="text-nowrap">Since last month</span>
+                                        </p>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card widget-flat">
+                                    <div class="card-body">
+                                        <div class="float-end">
+                                            <i class="mdi mdi-pulse widget-icon bg-warning-lighten text-warning"></i>
+                                        </div>
+                                        <h5 class="text-muted fw-normal mt-0" title="Growth">Growth</h5>
+                                        <h3 class="mt-3 mb-3">+ 30.56%</h3>
+                                        <p class="mb-0 text-muted">
+                                            <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
+                                            <span class="text-nowrap">Since last month</span>
+                                        </p>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+                        </div>
+
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+
+
+            </div>
+            <!-- container -->
+
+        </div>
+        <!-- content -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <script>document.write(new Date().getFullYear())</script>
+                        © Hyper - Coderthemes.com
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-end footer-links d-none d-md-block">
+                            <a href="javascript: void(0);">About</a>
+                            <a href="javascript: void(0);">Support</a>
+                            <a href="javascript: void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+
+</div>
+
+
+
+
+
+<div class="rightbar-overlay"></div>
+<script src="{% static '' %}js/vendor.min.js"></script>
+<script src="{% static '' %}js/app.min.js"></script>
+<script src="{% static '' %}js/vendor/apexcharts.min.js"></script>
+<script src="{% static '' %}js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="{% static '' %}js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{% static '' %}js/pages/demo.dashboard.js"></script>
+</body>
+
+</html>
